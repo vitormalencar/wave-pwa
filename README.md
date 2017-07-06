@@ -7,7 +7,7 @@
 
 SoundCloud PWA client built with React, Redux, and Redux Observable. Try the [live demo](https://test-wave-app.surge.sh/).
 
-This App uses:
+# Stack:
   - Preact
   - React-Router
   - Redux
@@ -17,7 +17,18 @@ This App uses:
   - SW-Precache
   - Webpack Dashboard(For Bundle Analysis)
 
-JS Build files:
+
+# Features
+  - Offline Caching (via serviceWorker)
+  - Asset Versioning (aka "cache-busting")
+  - ES2015 (ES6) and ES2016 (ES7) support
+  - Webpack Bundle Analysis (see dashboard)
+  - Hot Module Replacement (HMR) for all files
+  - Preact's Developer Tools
+  - Lighthouse certified
+
+
+# JS Build files
  - app.js - 246kb (17kb gzipped)
  - vendor.js - 441kb (8.04kb gzipped) :rocket:
 
