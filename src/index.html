@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"<% if( htmlWebpackPlugin.files.manifest) { %> manifest="<%=  htmlWebpackPlugin.files.manifest %>"<% } %>>
+	<head>
+		<meta charset="utf-8">
+		<title><%= htmlWebpackPlugin.options.title %></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=6,minimal-ui">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<% if ( htmlWebpackPlugin.options.manifest) { %>
+			<link rel="manifest" href="<%= htmlWebpackPlugin.options.manifest %>">
+		<% } %>
+		<% if ( htmlWebpackPlugin.options.themeColor) { %>
+			<meta name="theme-color" content="<%= htmlWebpackPlugin.options.themeColor %>">
+		<% } %>
+		<% if ( htmlWebpackPlugin.files.favicon) { %>
+			<link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon %>">
+		<% } %>
+		<% if ( htmlWebpackPlugin.options.icon) { %>
+			<link rel="icon" sizes="300x300" href="<%= htmlWebpackPlugin.options.icon %>">
+		<% } %>
+		<% for (var css in  htmlWebpackPlugin.files.css) { %>
+			<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>">
+		<% } %>
+	</head>
+	<body>
+		<% for (var chunk in  htmlWebpackPlugin.files.chunks) { %>
+			<script rel="preload" src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script"></script>
+		<% } %>
+		<noscript style="text-align:center;">
+			<h2> PreactSS doesn't work without JavaScript. </h2>
+			<h5> Please <a href="http://enable-javascript.com/" target="_blank">enable javascript</a> and refresh your browser to continue</h5>
+		</noscript>
+	</body>
+</html>
