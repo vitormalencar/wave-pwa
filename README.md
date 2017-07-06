@@ -1,9 +1,11 @@
 # Wave-pwa
 
+![Wave-pwa](logo.png)
+
 [![Build Status](https://travis-ci.org/vitormalencar/wave-pwa.svg?branch=master)](https://travis-ci.org/vitormalencar/wave-pwa)
 [![Code Climate](https://codeclimate.com/github/vitormalencar/wave-pwa/badges/gpa.svg)](https://codeclimate.com/github/vitormalencar/wave-pwa)
 
-A basic SoundCloud API client built with React, Redux, and Redux Observable. Try the [live demo](https://test-wave-app.surge.sh/).
+SoundCloud PWA client built with React, Redux, and Redux Observable. Try the [live demo](https://test-wave-app.surge.sh/).
 
 This App uses:
   - Preact
@@ -34,16 +36,7 @@ cd wave-pwa
 ```
 
 
-**2. Make it your own:**
-
-```sh
-rm -rf .git && git init && yarn init
-```
-
-> :information_source: This re-initializes the repo and sets up your yarn project.
-
-
-**3. Install the dependencies:**
+**2. Install the dependencies:**
 
 ```sh
 yarn install
@@ -56,7 +49,7 @@ yarn install
 ## Development Workflow
 
 
-**4. Start a live-reload development server:**
+**3. Start a live-reload development server:**
 
 ```sh
 yarn run dev
@@ -66,7 +59,7 @@ yarn run dev
 
 > :information_source: Try to avoid using Service Worker in your development environment, so you won't need to hard reload the page anytime you make a change.
 
-**5. Generate a production build in `./build`:**
+**4. Generate a production build in `./build`:**
 
 ```sh
 yarn run build
