@@ -1,0 +1,434 @@
+//colors
+$white: #fff;
+$black: #000;
+$gallery: #efefef;
+$color_shark: #27272b;
+$color_apple: #40db3d;
+$color_mirage: #1c1c1f;
+$color_monsoon: #87888b;
+$color_charade: #2c2c32;
+$color_cape_cod: #404042;
+$color_woodsmoke: #101010;
+$color_mountain_mist: #999;
+$color_pastel_green: #6ae368;
+$black_60: rgba(0, 0, 0, .6);
+$black_20: rgba(0, 0, 0, .2);
+$black_12: rgba(0, 0, 0, .12);
+$black_24: rgba(0, 0, 0, .24);
+$white_40: hsla(0, 0%, 100%, .4);
+$white_10: hsla(0, 0%, 100%, .1);
+
+ //fonts
+$font_0: arial;
+//data-uris
+$data_uri_0: 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="30" /></filter></svg>#filter';
+
+//urls
+$url_0: url("https://i1.sndcdn.com/artworks-000134796236-zggnbk-t200x200.jpg");
+$url_1: url("https://m.soundcloud.com/assets/images/hdpi/player/mini_play_pause_button-6b8e48e4.png");
+
+//@extend-elements
+
+//original selectors
+//.shuffle, .top-title h1
+%extend_1 {
+  text-align: center;
+  letter-spacing: 1.68px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 16.8px;
+  font-size: 2rem;
+}
+//original selectors
+//.ghost, .lower
+
+%extend_2 {
+  position: relative;
+  top: 210px;
+  top: 25rem;
+}
+
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: normal;
+}
+
+.lower {
+  z-index: 3;
+  height: 100%;
+  border-top: 1px solid $color_shark;
+  background: $color_woodsmoke;
+  @extend %extend_2;
+
+  ul {
+    margin-bottom: 70px;
+
+    .song {
+      margin-bottom: 4.2px;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      font-size: 17.64px;
+      font-size: 2.1rem;
+
+      &:after {
+        position: relative;
+        top: 10px;
+        float: right;
+        margin-right: 2%;
+        content: "\2807";
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+        text-align: center;
+        color: $color_monsoon;
+        font-size: 1.3em;
+        font-weight: 700;
+      }
+
+      &:hover {
+        color: $color_pastel_green;
+
+        &:after {
+          color: $white;
+        }
+      }
+    }
+
+    li {
+      padding: 2rem 3% 3rem;
+
+      &:after {
+        position: relative;
+        bottom: -21px;
+        bottom: -2.5rem;
+        display: block;
+        width: 98%;
+        height: 1px;
+        margin: 0 auto;
+        content: " ";
+        background: $color_shark;
+      }
+    }
+
+    .artist {
+      color: $color_monsoon;
+      font-size: 13.44px;
+      font-size: 1.6rem;
+    }
+  }
+
+  &:after {
+    will-change: transform;
+  }
+
+  .bar {
+    width: 100%;
+    padding: 6rem 2% 3rem;
+    background: $color_mirage;
+    font-size: 17.64px;
+    font-size: 2.1rem;
+
+    p {
+      padding-top: 4.2px;
+      padding-top: 0.5rem;
+    }
+
+    .slide {
+      float: right;
+      width: 46.2px;
+      width: 5.5rem;
+      height: 26.88px;
+      height: 3.2rem;
+      margin-right: 2%;
+      cursor: move;
+      border: 1px solid $color_cape_cod;
+      border-radius: 3rem;
+
+      .knob {
+        width: 25.2px;
+        width: 3rem;
+        height: 25.2px;
+        height: 3rem;
+        border-radius: 100%;
+        background: $white;
+        box-shadow: 0 2px 2px $white_40;
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 52.5%;
+}
+
+body {
+  height: 100%;
+  color: $white;
+  background: $color_woodsmoke;
+  font-family: $font_0;
+  font-size: 11.76px;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding-top: 25.2px;
+  padding-top: 3rem;
+
+  &.hold {
+    .playlist {
+      opacity: 0;
+    }
+
+    .top-title {
+      opacity: 1;
+    }
+
+    .shuffle {
+      position: fixed;
+      z-index: 20;
+      top: 50.4px;
+      top: 6rem;
+      left: 50%;
+      width: 60%;
+      transform: translateX(-50%);
+    }
+
+    .ghost {
+      display: block;
+    }
+  }
+
+  .bg-cover {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    filter: url($data_uri_0);
+    filter: blur(30px);
+
+    &:before {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: " ";
+      background: $url_0 no-repeat 50%;
+      background-color: $white;
+      background-size: cover;
+      will-change: transform;
+    }
+  }
+}
+
+.top-title {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 67.2px;
+  height: 8rem;
+  padding-top: 16.8px;
+  padding-top: 2rem;
+  opacity: 0;
+  background: $black;
+
+  h1 {
+    padding: 0 20px;
+    font-weight: 300;
+    @extend %extend_1;
+  }
+}
+
+.shuffle {
+  position: relative;
+  z-index: 4;
+  top: 235.2px;
+  top: 28rem;
+  display: block;
+  max-width: 200px;
+  height: 44.1px;
+  height: 5.25rem;
+  margin: 0 auto;
+  cursor: pointer;
+  text-indent: 22.68px;
+  text-indent: 2.7rem;
+  border-radius: 3rem;
+  background: $color_pastel_green;
+  line-height: 44.1px;
+  line-height: 5.25rem;
+  @extend %extend_1;
+
+  &:hover {
+    background: $color_apple;
+  }
+
+  p:before {
+    position: absolute;
+    top: 14.7px;
+    top: 1.75rem;
+    left: 16%;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 11px solid $white;
+  }
+}
+
+.ghost {
+  display: none;
+  height: 44.1px;
+  height: 5.25rem;
+  @extend %extend_2;
+}
+
+.sc-visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.player {
+  position: fixed;
+  z-index: 100;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 71px;
+  padding: 10px;
+  transform: translateZ(0);
+  animation-name: show-player;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  border-top: 1px solid $black_20;
+  background: $color_charade;
+  box-shadow: 0 0 4px 0 $black_12, 0 4px 4px 0 $black_24, inset 0 -1px 1px 0 $white_10;
+
+  .playControls__playPause {
+    float: right;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.1s ease-in;
+    border: 1px solid $color_cape_cod;
+    border-radius: 40px;
+    background: $white_10 $url_1 1px -38px no-repeat;
+    background-size: 100% auto;
+  }
+
+  .nowPlaying__title {
+    display: block;
+  }
+
+  .nowPlaying__username {
+    display: block;
+  }
+
+  .nowPlaying {
+    text-decoration: none;
+
+    .nowPlaying__artwork {
+      float: left;
+      margin: 0 15px 0 0;
+    }
+
+    .nowPlaying__username {
+      color: $color_mountain_mist;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .nowPlaying__title {
+      color: $white;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+@-webkit-keyframes show-player {
+  0% {
+    bottom: -80px;
+  }
+
+  to {
+    bottom: -10px;
+  }
+}
+@keyframes show-player {
+  0% {
+    bottom: -80px;
+  }
+
+  to {
+    bottom: -10px;
+  }
+}
+
+header.playlist {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  h1 {
+    overflow: hidden;
+    max-width: 310px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    white-space: pre;
+    text-overflow: ellipsis;
+    word-break: normal;
+    text-shadow: 0 1.68px 0 $black_60;
+    text-shadow: 0 0.2rem 0 $black_60;
+    font-size: 20.16px;
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+
+  img {
+    width: 45%;
+    height: 30%;
+    margin-bottom: 12.6px;
+    margin-bottom: 1.5rem;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 4.2px;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2.1px;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+    text-shadow: 0 1.68px 0 $black_60;
+    text-shadow: 0 0.2rem 0 $black_60;
+  }
+}
+
+.playing .playControls__playPause {
+  border: 1px solid $color_cape_cod;
+  background-position: 0 0;
+}
