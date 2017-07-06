@@ -8,8 +8,6 @@
     "prestart": "npm run -s build",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "rm -rf build mkdirp build",
-    "test": "karma start test/karma.conf.js --single-run",
-    "test:watch": "karma start test/karma.conf.js --auto-watch",
     "deploy": "npm run -s build && surge ./build -d https://test-wave-app.surge.sh"
   },
   "keywords": [
