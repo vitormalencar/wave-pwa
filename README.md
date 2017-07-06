@@ -1,6 +1,6 @@
 # Wave-pwa
 
-![Wave-pwa](logo.png)
+<a align="center" href="https://test-wave-app.surge.sh/"> ![Wave-pwa](logo.png) </a>
 
 [![Build Status](https://travis-ci.org/vitormalencar/wave-pwa.svg?branch=master)](https://travis-ci.org/vitormalencar/wave-pwa)
 [![Code Climate](https://codeclimate.com/github/vitormalencar/wave-pwa/badges/gpa.svg)](https://codeclimate.com/github/vitormalencar/wave-pwa)
