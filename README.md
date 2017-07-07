@@ -27,6 +27,10 @@ SoundCloud PWA client built with React, Redux, and Redux Observable. Try the [li
   - Preact's Developer Tools
   - Lighthouse certified
 
+  ## Lighthouse  
+  ![Lighthouse](lh.png)
+  ## pingdom
+  ![PingDom](pingdom.png)
 
 # JS Build files
  - app.js - 246kb (17kb gzipped)
