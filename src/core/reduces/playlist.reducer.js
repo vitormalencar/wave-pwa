@@ -13,7 +13,7 @@ const InitialState = {
     id: null,
     title: '',
     stream_url: '',
-    artwork_url: '',
+    artwork_url: 'http://via.placeholder.com/200x200',
     user: {
       username: ''
     }
