@@ -1,5 +1,5 @@
 import {map} from 'rxjs/add/operator/map';
-import {catch} from 'rxjs/add/operator/catch';
+import {catch as observableCatch} from 'rxjs/add/operator/catch';
 import {mergeMap} from 'rxjs/add/operator/mergeMap';
 
 import {getPlaylist} from '../api';
@@ -11,7 +11,7 @@ const requestPlaylistEpic = (action$) =>
 		.ofType(LOAD_PLAYLIST)
     .mergeMap(() => getPlaylist()
       .map(({response}) => resolvePlaylist(response))
-      .catch((err) => console.log(err))
+      .observableCatch((err) => console.log(err))
     );
 
 export default requestPlaylistEpic;
