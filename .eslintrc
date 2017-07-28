@@ -10,6 +10,7 @@
     "jsx": true
   },
   "rules": {
+    "no-reserved-keys": 0,
     "no-console": 0,
     "no-empty": 0,
     "no-unused-vars": [0, { "varsIgnorePattern": "^h$" }],
