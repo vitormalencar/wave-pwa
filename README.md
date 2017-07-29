@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/vitormalencar/wave-pwa.svg?branch=master)](https://travis-ci.org/vitormalencar/wave-pwa)
 [![Code Climate](https://codeclimate.com/github/vitormalencar/wave-pwa/badges/gpa.svg)](https://codeclimate.com/github/vitormalencar/wave-pwa)
 
-SoundCloud PWA client built with React, Redux, and Redux Observable. Try the [live demo](https://test-wave-app.surge.sh/).
+SoundCloud PWA client built with Preact, Redux, and Redux Observable. Try the [live demo](https://test-wave-app.surge.sh/).
 
 # Stack:
   - Preact
