@@ -22,7 +22,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/?utm_source=web_app_manifest&utm_medium=web_app_manifest",
   "display": "standalone",
   "theme_color": "#404042",
   "background_color": "#404042"
