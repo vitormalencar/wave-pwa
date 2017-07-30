@@ -53,6 +53,7 @@ $url_1: url("https://m.soundcloud.com/assets/images/hdpi/player/mini_play_pause_
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: normal;
+
 }
 
 .lower {
@@ -71,20 +72,6 @@ $url_1: url("https://m.soundcloud.com/assets/images/hdpi/player/mini_play_pause_
       cursor: pointer;
       font-size: 17.64px;
       font-size: 2.1rem;
-
-      &:after {
-        position: relative;
-        top: 10px;
-        float: right;
-        margin-right: 2%;
-        content: "\2807";
-        cursor: pointer;
-        transition: color 0.2s ease-in-out;
-        text-align: center;
-        color: $color_monsoon;
-        font-size: 1.3em;
-        font-weight: 700;
-      }
 
       &:hover {
         color: $color_pastel_green;
@@ -340,6 +327,7 @@ body {
 
   .nowPlaying__title {
     display: block;
+    max-width: 70%;
   }
 
   .nowPlaying__username {

@@ -20,8 +20,8 @@ const Player = ({currentTrack, isPlaying, play}) => (
       width="40"
       height="40"
       alt="Retro"/>
-      <span class="nowPlaying__title sc-truncate">{currentTrack.title}</span>
-      <span class="nowPlaying__username sc-truncate">{currentTrack.user.username}</span>
+      <span class="nowPlaying__title truncate">{currentTrack.title}</span>
+      <span class="nowPlaying__username truncate">{currentTrack.user.username}</span>
     </a>
   </div>
 );
