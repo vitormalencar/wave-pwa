@@ -76,7 +76,7 @@
   },
   "dependencies": {
     "preact": "^8.1.0",
-    "preact-compat": "^3.9.4",
+    "preact-compat": "^3.10.0",
     "preact-redux": "^2.0.0",
     "preact-router": "^2.4.5",
     "react-helmet": "^5.0.0",
