@@ -75,7 +75,7 @@
     "webpack-plugin-critical": "^1.0.0"
   },
   "dependencies": {
-    "preact": "^10.0.0",
+    "preact": "^10.4.0",
     "preact-compat": "^3.9.4",
     "preact-redux": "^2.0.0",
     "preact-router": "^3.0.1",
