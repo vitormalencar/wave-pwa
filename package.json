@@ -38,7 +38,7 @@
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "eslint": "^6.5.1",
-    "eslint-loader": "^3.0.2",
+    "eslint-loader": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^7.0.0",
     "extract-text-webpack-plugin": "3.0.2",
@@ -53,7 +53,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.4",
     "mocha": "^7.1.1",
     "node-sass": "^4.5.2",
     "offline-plugin": "^5.0.7",
@@ -75,8 +75,8 @@
     "webpack-plugin-critical": "^1.0.0"
   },
   "dependencies": {
-    "preact": "^10.0.0",
-    "preact-compat": "^3.9.4",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.10.0",
     "preact-redux": "^2.0.0",
     "preact-router": "^3.0.1",
     "react-helmet": "^5.0.0",
