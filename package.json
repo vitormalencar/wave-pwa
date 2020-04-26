@@ -54,7 +54,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "mkdirp": "^1.0.4",
-    "mocha": "^7.1.1",
+    "mocha": "^7.1.2",
     "node-sass": "^4.5.2",
     "offline-plugin": "^5.0.7",
     "postcss-cssnext": "^3.1.0",
